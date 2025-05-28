@@ -33,11 +33,11 @@ pipeline{
 
   post{
     success{
-      sh 'success in build and test'
+      echo 'success in build and test'
     }
 
     failure{
-      sh 'better luck next time'
+      echo 'better luck next time'
     }
   }
 }
